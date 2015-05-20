@@ -33,17 +33,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.png" alt="" class="img-responsive" style="height:100%;" /> 
+                <a class="navbar-brand" href="{% url 'homepage.views.index' %}">
+                    <img src="{% static 'homepage/img/logo.png' %}" alt="" class="img-responsive" style="height:100%;" /> 
                 </a>
             </div>
             <div class="navbar-collapse collapse navbar-right scroll-me">
                 <ul class="nav navbar-nav ">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="{% url 'homepage.views.index' %}">HOME</a></li>
+                    <!-- <li><a href="#services">SERVICES</a></li>
                     <li><a href="#team">TEAM</a></li>
                     <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="#login-modal" data-toggle="modal">LOGIN</a></li>
+                    <li><a href="#login-modal" data-toggle="modal">LOGIN</a></li> -->
                 </ul>
             </div>
 
@@ -254,107 +254,6 @@
 			</form>
 		</div>
     </section>
-	
-	<!-- END SURVEY -->
-    <!--WORKS / PORTFOLIO SECTION END  -->
-<!--     <div id="video-sec" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Ycv5fNd4AeM',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}"> -->
-        <!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
-<!--         <div class="overlay">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <h1>HERE IS BACKGROUND VEDIO</h1>
-                        <h4>This scripts uses plugin <strong>jquery.mb.YTPlayer</strong>
-
-                        </h4>
-                        <h4>to play video in background of divs
-
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div> -->
-    <!-- VIDEO SECTION END-->
-   
-    <!-- CONTACT SECTION END-->
-<!--     <section id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="assets/img/audio.png" alt="" class="img-responsive" />
-                </div>
-                <div class="col-md-3">
-                    <img src="assets/img/codecanon.png" alt="" class="img-responsive" />
-                </div>
-                <div class="col-md-3">
-                    <img src="assets/img/graphic.png" alt="" class="img-responsive" />
-                </div>
-                <div class="col-md-3">
-                    <img src="assets/img/themeforest.png" alt="" class="img-responsive" />
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- CLIENTS SECTION END-->
-    <!-- Modals -->
-    <div id="signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="signup-label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="signup-label">We'd Love to Hear From You</h3>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal col-sm-12">
-                        <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text">
-                        </div>
-                        <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea>
-                        </div>
-                        <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text">
-                        </div>
-                        <div class="form-group"><label>Phone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text">
-                        </div>
-                        <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--SIGNUP SECTION END -->
-        <div id="login-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="login-label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="login-label">We'd Love to Hear From You</h3>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal col-sm-12">
-                        <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text">
-                        </div>
-                        <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea>
-                        </div>
-                        <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text">
-                        </div>
-                        <div class="form-group"><label>Phone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text">
-                        </div>
-                        <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--LOGIN SECTION END -->
 
     <footer>
         © 2015

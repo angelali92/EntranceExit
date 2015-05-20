@@ -9,3 +9,9 @@ def index(request):
 
 def matches(request):
 	return render(request, 'dashboards/matches.html')
+
+def diagnosis(request):
+	return render(request, 'dashboards/diagnosis.html')
+
+def scheduler(request):
+	return render(request, 'dashboards/scheduler.html')

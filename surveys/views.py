@@ -25,3 +25,9 @@ def candidate(request):
 
 def company(request):
 	return render(request, 'surveys/company.html')
+
+def entrance(request):
+	return render(request, 'surveys/entrance.html')
+
+def exit(request):
+	return render(request, 'surveys/exit.html')

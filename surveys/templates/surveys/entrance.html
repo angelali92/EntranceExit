@@ -1,50 +1,50 @@
 {% load staticfiles %}
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>E-Squared - Home</title>
-    <!-- BOOTSTRAP STYLE SHEET -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!--[if IE]>
+         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+         <![endif]-->
+        <title>E-Squared - Entrance Survey</title>
+        <!-- BOOTSTRAP STYLE SHEET -->
         <link href="{% static 'homepage/css/bootstrap.css' %}" rel="stylesheet" />
         <!-- FONT AWESOME ICONS STYLE SHEET -->
         <link href="{% static 'homepage/css/font-awesome.css' %}" rel="stylesheet" />
         <!-- CUSTOM STYLES -->
         <link href="{% static 'homepage/css/style.css' %}" rel="stylesheet" />
-	<!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	
-
-</head>
-<body>
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{% url 'homepage.views.index' %}">
-                    <img src="{% static 'homepage/img/logo.png' %}" alt="" class="img-responsive" style="height:100%;" /> 
-                </a>
-            </div>
-            <div class="navbar-collapse collapse navbar-right scroll-me">
-                <ul class="nav navbar-nav ">
-                    <li><a href="{% url 'homepage.views.index' %}">HOME</a></li>
-                    <!-- <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#team">TEAM</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="#login-modal" data-toggle="modal">LOGIN</a></li> -->
-                </ul>
+        <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+         <![endif]-->
+        
+        
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header scroll-me">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home">
+                        <img src="{% static 'homepage/img/logo.png' %}" alt="" class="img-responsive" style="height:100%;" />
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse navbar-right scroll-me">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="#home">HOME</a></li>
+                        <!-- <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#pricing">PRICING</a></li>
+                        <li><a href="#team">TEAM</a></li>
+                        <li><a href="#login-modal" data-toggle="modal">LOGIN</a></li> -->
+                    </ul>
             </div>
 
         </div>
@@ -58,9 +58,9 @@
 	 <div class="parallax-like">
         <div class="overlay">
             <div class="container">
-				<h1> Create Your Profile</h1>
+				<h1> Welcome to the Team!</h1>
 				<h4>
-					This information will be used to help match you to Companies or Job Seekers. Sensitive information will be kept secret and only you will be able to see your exact responses, so rest assured your secrets are safe. 
+					Taking this survey will help management learn from your hiring and work experience. Exact answers and your identity will not be available to your company, nor will they be published so rest assured and answer honestly.
 				</h4>
 		    </div>
         </div>
@@ -68,13 +68,26 @@
 	<section id="services">
         <div class="container">
 			<ol>
-				<li>
-					<p>
-					How much access do you prefer to have to management? (1 being almost none, 10 being all access, all the time)
-					</p>
-					<form action="http://www.w3schools.com/Html/html_forms.asp">
+				<form action="http://www.w3schools.com/Html/html_forms.asp">
 					<!-- upon form submission you go to thi w.3 schools page. this needs to be change -->
-					<form>
+				<form>
+				<li>
+					What is your company name?<br>
+					<input type="text" name="companyName">
+				</li>
+				<li>
+					What is your team name?<br>
+					<input type="text" name="teamName">
+				</li>
+				<li>
+					What field does your team work in?<br>
+					<input type="text" name="teamFieldName">
+				</li>
+				<li>
+					<p><!-- pricing allows job posting per team -->
+					How how much access do you expect to have to managers on your team? (1 being almost none, 10 being all access, all the time)
+					</p>
+
 						<ul id = "menu">
 						<li><input type="radio" name="managementAccess" value="1" checked>1</li>
 						<!--<br>-->
@@ -100,7 +113,7 @@
 				</li>
 				<li>
 					<p>
-					What pace do you prefer to work at? (1 being slow, 10 completely hectic)
+					What pace do you expect your work pace to be like on your team? (1 being slow, 10 completely hectic)
 					</p>
 					<!-- <form> -->
 						<ul id = "menu">
@@ -128,96 +141,17 @@
 				</li>
 				<li>
 					<p>
-					What company size do you prefer?
-					</p>
-					<!-- <form> -->
-						<ul id = "menu">
-						<li><input type="radio" name="coSize" value="very small" checked>very small</li>
-						<!--<br>-->
-						<li><input type="radio" name="coSize" value="small">small</li>
-						<!--<br>-->
-						<li><input type="radio" name="coSize" value="medium">medium</li>
-						<!--<br>-->
-						<li><input type="radio" name="coSize" value="large">large</li>
-						<!--<br>-->
-						<li><input type="radio" name="coSize" value="very large">very large</li>
-						<!--<br>-->
-						</ul>
-					<!-- </form> -->
-				</li>
-				<li>
-					<p>
-					How stressful do you prefer your day to be? (1 being almost none, 10 being the most)
-					</p>
-					<!-- <form> -->
-						<ul id = "menu">
-						<li><input type="radio" name="stress" value="1" checked>1</li>
-						<!--<br>-->
-						<li><input type="radio" name="stress" value="2">2</li>
-						<!--<br>-->
-						<li><input type="radio" name="stress" value="3">3</li>
-						<!--<br>-->
-						<li><input type="radio" name="stress" value="4">4</li>
-						<!--<br>-->
-						<li><input type="radio" name="stress" value="5">5</li>
-						<!--<br>-->
-						<li><input type="radio" name="stress" value="6">6</li>
-						<!--<br>-->
-						<li><input type="radio" name="stress" value="7">7</li>
-						<!--<br>-->
-						<li><input type="radio" name="stress" value="8">8</li>
-						<!--<br>-->
-						<li><input type="radio" name="stress" value="9">9</li>
-						<!--<br>-->
-						<li><input type="radio" name="stress" value="10">10</li>
-						</ul>
-					<!-- </form> -->
-				</li>
-				<li>
-					<p>
-					What are your group preferences?
-					</p>
-					<!-- <form> -->
-						<input type="radio" name="groupPreferences" value="individual" checked>Individual
-						<input type="radio" name="groupPreferences" value="pairs">Pairs
-						<input type="radio" name="groupPreferences" value="smallTeam">smallTeam
-						<input type="radio" name="groupPreferences" value="largeTeam">largeTeam
-					<!-- </form> -->
-				</li>
-				<li>
-					<p>
-					Would you prefer to work on stable products or cutting edge?
+					Do you expect to be working on stable products or cutting edge?
 					</p>
 					<!-- <form> -->
 						<input type="radio" name="innovation" value="stableProducts" checked>Stable Products
 						<input type="radio" name="innovation" value="cuttingEdge">Cutting Edge
-						<input type="radio" name="innovation" value="np">No Preference
+						<input type="radio" name="innovation" value="inBetween">In Between
 					<!-- </form> -->
 				</li>
 				<li>
 					<p>
-					Are you willing to relocate?
-					</p>
-					<!-- <form> -->
-						<input type="radio" name="relocate" value="yes" checked>Yes
-						<input type="radio" name="relocate" value="no">No
-						<input type="radio" name="relocate" value="dependsWhere">Only to these locations: 
-						<input type="text" name="dependsWhere">
-					<!-- </form> -->
-				</li>
-				<li>
-					<p>
-					How often would you like to travel on the job?
-					</p>
-					<!-- <form> -->
-						<input type="radio" name="travel" value="never" checked>Never
-						<input type="radio" name="travel" value="occasionally">occasionally
-						<input type="radio" name="travel" value="often">often
-					<!-- </form> -->
-				</li>
-				<li>
-					<p>
-					How frequently do you prefer to socialize with your team mates at work?
+					How frequently do you expect to socialize with team mates at work?
 					</p>
 					<!-- <form> -->
 						<input type="radio" name="socialize" value="never" checked>Never
@@ -225,16 +159,6 @@
 						<input type="radio" name="socialize" value="sometimes">Sometimes
 						<input type="radio" name="socialize" value="often">Often
 					<!-- </form> -->
-				</li>
-				<li>
-					What are the top 5 reasons for which you imagine you would leave a company?<br>
-					<ol>
-					<li><input type="text" name="reasonsForLeaving1"></li>
-					<li><input type="text" name="reasonsForLeaving2"></li>
-					<li><input type="text" name="reasonsForLeaving3"></li>
-					<li><input type="text" name="reasonsForLeaving4"></li>
-					<li><input type="text" name="reasonsForLeaving5"></li>
-					</ol>
 				</li>
 			</ol>
 			<br><br>

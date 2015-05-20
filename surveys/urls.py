@@ -13,4 +13,6 @@ urlpatterns = [
     url(r'^(?P<question_id>[0-9]+)/vote/$', views.vote, name='vote'),
     url(r'^candidate/$', views.candidate, name='candidate'),
     url(r'^company/$', views.company, name='company'),
+    url(r'^entrance/$', views.entrance, name='entrance'),
+    url(r'^exit/$', views.exit, name='exit'),
 ]
