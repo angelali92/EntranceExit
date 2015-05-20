@@ -17,7 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^$', 'homepage.views.index'),
 	url(r'^surveys/', include('surveys.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'entranceexit.views.index'),
 ]
