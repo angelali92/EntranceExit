@@ -27,13 +27,13 @@
     <body>
         <div class="navbar navbar-default navbar-fixed-top">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header scroll-me">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="#home">
                         <img src="{% static 'homepage/img/logo.png' %}" alt="" class="img-responsive" style="height:100%;" />
                     </a>
                 </div>
@@ -64,153 +64,157 @@
                             <a class="btn btn-default btn-lg" href="#job-signup-modal" data-toggle="modal"> Job Seeker</a>
                             
                             <a class="btn btn-default btn-lg" href="#comp-signup-modal" data-toggle="modal"> Company Rep</a>
-                            </div>
-                            
-                            </div>
-                            </div>
-                            </div>
-                            
-                            </div>
-                            <!--HOME SECTION END  -->
-                            
-                            <section id="services">
-                            <div class="container">
-                            <div class="row text-center pad-bottom">
-                            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-                            <h2 class="head-set">OUR SERVICES</h2>
-                            </div>
-                            </div>
-                            <div class="row text-center">
-                            
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                            <i class="fa fa-desktop  fa-5x"></i>
-                            <h4 class="head-set">EASY TO CUSTOMIZE </h4>
-                            <p>
-                            Need to find things fast? We can help you do that.
-                            </p>
-                            <p>
-                            Our "Match Dashboard" and "Employment Insights Dashboard" are designed with you in mind. Our basic dashboards are preloaded with juicy data specially selected to help you find what you want fast. But if you are looking for something specific or want to personalize your views we support you. Specialize your info with a simple click of a button. Filter out what you don't need and display what you want in Graphs, Pie Charts or however you want.
-                            </p>
-                            
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                            <i class="fa fa-bolt  fa-5x"></i>
-                            <h4 class="head-set">INTELLIGENT DESIGN</h4>
-                            <p>
-                            Our surveys and matching algorithms come from our research into culture job seeking and hiring. Our research includes exclusive interviews with hiring managers from Experian, Sendgrid, Girls in Tech, and Black Box Network Services and  as well as 30+ interviews with job seekers and employed professionals in industry.
-                            </p>
-                            <p>
-                            What is our algorithm? Its a trade secret, so we can't share our exact methods, but we can tell you that 81% of our the people who tried our product were satisfied with the results. So try us out today!
-                            </p>
-                            </div>
-                            </div>
-                            </div>
-                            </section>
-                            <!--SERVICES SECTION END  -->
-                            <section id="pricing">
-                            <div class="parallax-like">
-                            <div class="overlay">
-                            
-                            
-                            <div class="container">
-                            <div class="row text-center ">
-                            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-                            <h2 class="head-set">Pricing</h2>
-                            <h3>Basic Membership - absolutely 100% free:</h3>
-                            <p>
-                            
-                            Basic membership for job seekers and employees includes the ability to:
-                            <ul>
-                            <li>Sign up</li>
-                            <li>Create a profile </li>
-                            <li>Take and retake Culture quizzes every 3 months</li>
-                            <li>View your top matches on your "Matches Dashboard" - shows you companies or job seekers with the most compatible values.</li>
-                            </ul>
-                            </p>
-                            <h3>Premium Membership - Price varies per company size, contact us a quote:</h3>
-                            <p>
-                            
-                            Premium Membership will . Additionally it grants you access to:
-                            <ul>
-                            <li>"Hiring Insights Dashboard" - shows companies their entrance and exit trends and can be filtered and personalized to help you find indicators for why employees choose you and why they stay.</li>
-                            <li>Survey Administration - grant employees access to entrance and exit surveys which will help you collect information you need. </li>
-                            <li> A parking spot for your logo on our homepage </li>
-                            </ul>
-                            </p>
-                            <br />
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </section>
-                            <!--PARALLAX LIKE / STATS SECTION END  -->
-                            <section id="team">
-                            <div class="container">
-                            <div class="row text-center pad-bottom">
-                            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-                            <h2 class="head-set">OUR TEAM</h2>
-                            <p>
-                            We are a dynamic team dedicated to helping you connect with the right people. Our main members are Angela Li, Stephanie Eng, and Alicia Liu.
-                            
-                            </p>
-                            </div>
-                            </div>
-                            <div class="row text-center portfolio-item">
-                            
-                            <div class="col-md-3 col-sm-3 ">
-                            <div class="alert alert-info">
-                            <img src="{% static 'homepage/img/headshot.png' %}" class="img-responsive " style="width:100%; border-radius:500px;" alt="" />
-                            
-                            <h3>Angela Li</h3>
-                            <h5>Codename: <strong>Oracle</strong></h5>
-                            </div>
-                    
-                </div>
-                <div class="col-md-3 col-sm-3 ">
-                    <div class="alert alert-danger">
-                        <img src="{% static 'homepage/img/stephanie.png' %}" class="img-responsive " style="width:100%; border-radius:500px;" alt="" />
-                        
-                        <h3>Stephanie Eng</h3>
-                        <h5>Codename: <strong>Storm</strong></h5>
                     </div>
-                    
+                            
                 </div>
-                <div class="col-md-3 col-sm-3 ">
-                    <div class="alert alert-success">
-                        <img src="{% static 'homepage/img/gurveen.png' %}" class="img-responsive " style="width:100%; border-radius:500px;" alt="" />
-                        
-                        <h3>Gurveen Sekhon</h3>
-                        <h5>Codename: <strong>Samus</strong></h5>
-                    </div>
-                    
-                </div>
-                <div class="col-md-3 col-sm-3 ">
-                    <div class="alert alert-info">
-                        <img src="{% static 'homepage/img/alicia.png' %}" class="img-responsive " style="width:100%; border-radius:500px;" alt="" />
-                        
-                        <h3>Alicia Liu</h3>
-                        <h5>Codename: <strong>Psylocke</strong></h5>
-                    </div>
-                    
-                </div>
-                
             </div>
-            
-            <div class="row text-center">
-                <br/><br/><br/><br/>
-                
-                <div class="col-md-12">
-                    <p>For more information on pricing contact us at:</p>
-                    <p>Irvine, California, United States </p>
-                    <p><strong>Email :</strong> info@esquared.com</p>
-                </div>
-                
-                
-            </div>
+        </div>                              
+        <!--HOME SECTION END  -->
+                            
+        <section id="services">
+        <div class="container">
+        <div class="row text-center pad-bottom">
+        <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+        <h2>OUR SERVICES</h2>
+        </div>
+        </div>
+        <div class="row text-center">
+        
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <i class="fa fa-desktop  fa-5x"></i>
+        <h4 class="head-set">EASY TO CUSTOMIZE </h4>
+        <p>
+        Need to find things fast? We can help you do that.
+        </p>
+        <p>
+        Our "Match Dashboard" and "Employment Insights Dashboard" are designed with you in mind. Our basic dashboards are preloaded with juicy data specially selected to help you find what you want fast. But if you are looking for something specific or want to personalize your views we support you. Specialize your info with a simple click of a button. Filter out what you don't need and display what you want in Graphs, Pie Charts or however you want.
+        </p>
+        
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <i class="fa fa-bolt  fa-5x"></i>
+        <h4 class="head-set">INTELLIGENT DESIGN</h4>
+        <p>
+        Our surveys and matching algorithms come from our research into culture job seeking and hiring. Our research includes exclusive interviews with hiring managers from Experian, Sendgrid, Girls in Tech, and Black Box Network Services and  as well as 30+ interviews with job seekers and employed professionals in industry.
+        </p>
+        <p>
+        What is our algorithm? Its a trade secret, so we can't share our exact methods, but we can tell you that 81% of our the people who tried our product were satisfied with the results. So try us out today!
+        </p>
+        </div>
+        </div>
         </div>
         </section>
-        <!--WORKS / PORTFOLIO SECTION END  -->
+        <!--SERVICES SECTION END  -->
+
+        <section id="pricing">
+	        <div class="parallax-like">
+		        <div class="overlay">
+			        <div class="container">
+				        <div class="row text-center pad-bottom">
+					        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+						        <h2 class="head-set">Pricing</h2>
+						        <h4> These are our wonderful pricing options. Email us at info@esquared.com for more information. </h4>
+					        </div>
+					    </div>
+					    <div class="row pad-bottom">
+					        <div class="col-md-6 col-sm-12">
+					        	<div class="pricing-tier">
+		        					<h3>Basic Membership</h3>
+		        					<h4> Absolutely Free </h4>
+		        					<hr/>
+									<ul>
+										<li>Sign up</li>
+										<li>Create a profile </li>
+										<li>Take and retake Culture quizzes every 3 months</li>
+										<li>
+											View your top matches on your "Matches Dashboard"
+											<ul><li>Shows you companies or job seekers with the most compatible values</li></ul>
+										</li>
+									</ul>
+									<br/>
+								</div>
+		        			</div>
+					        <div class="col-md-6 col-sm-12">
+					        	<div class="pricing-tier">
+		        					<h3>Premium Membership</h3>
+		        					<h4> Price varies per company size, contact us for a quote</h4>
+		        					<hr/>
+							        <ul>
+								        <li>
+								        	Hiring Insights Dashboard
+											<ul><li>Shows companies their entrance and exit trends and can be filtered and personalized to help you find indicators for why employees choose you and why they stay</li></ul>
+								        </li>
+								        <li>
+								        	Survey Administration
+								         	<ul><li>Grant employees access to entrance and exit surveys which will help you collect information you need.</li></ul> 
+								        </li>
+								        <li> A parking spot for your logo on our homepage </li>
+							        </ul>
+								</div>
+		        			</div>
+		        		</div>
+				        </div>
+			        </div>
+		        </div>
+	        </div>
+        </section>
+        <!--PARALLAX LIKE / PRICING SECTION END  -->
+
+        <section id="team">
+        	<div class="container">
+        		<div class="row text-center pad-bottom">
+        			<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+        				<h2>OUR TEAM</h2><br/>
+				        <p>
+				        	We are a dynamic team dedicated to helping you connect with the right people. Our main members are Angela Li, Stephanie Eng, and Alicia Liu.
+				        </p>
+        			</div>
+        		</div>
+        		<div class="row text-center portfolio-item">
+        			<div class="col-md-3 col-sm-3 ">
+        				<div class="alert alert-info">
+        					<img src="{% static 'homepage/img/headshot.png' %}" class="img-responsive " style="width:100%; border-radius:500px;" alt="" />
+        					<h3>Angela Li</h3>
+        					<h5>Codename: <strong>Oracle</strong></h5>
+        				</div>
+        			</div>
+			        <div class="col-md-3 col-sm-3 ">
+			            <div class="alert alert-danger">
+			                <img src="{% static 'homepage/img/stephanie.png' %}" class="img-responsive " style="width:100%; border-radius:500px;" alt="" />
+			                
+			                <h3>Stephanie Eng</h3>
+			                <h5>Codename: <strong>Storm</strong></h5>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-3 ">
+			            <div class="alert alert-success">
+			                <img src="{% static 'homepage/img/gurveen.png' %}" class="img-responsive " style="width:100%; border-radius:500px;" alt="" />
+			                
+			                <h3>Gurveen Sekhon</h3>
+			                <h5>Codename: <strong>Samus</strong></h5>
+			            </div> 
+			        </div>
+			        <div class="col-md-3 col-sm-3 ">
+			            <div class="alert alert-info">
+			                <img src="{% static 'homepage/img/alicia.png' %}" class="img-responsive " style="width:100%; border-radius:500px;" alt="" />
+			                
+			                <h3>Alicia Liu</h3>
+			                <h5>Codename: <strong>Psylocke</strong></h5>
+			            </div>
+			        </div>      
+    			</div>
+			    <div class="row text-center pad-bottom">
+			        <br/><br/><br/><br/>
+			        <div class="col-md-12">
+			            <p>For more information contact us at:</p>
+			            <p>Irvine, California, United States </p>
+			            <p><strong>Email :</strong> info@esquared.com</p>
+			        </div>
+			    </div>
+			</div>
+		</section>
+		<!--WORKS / PORTFOLIO SECTION END  -->
+
         <!--     <div id="video-sec" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Ycv5fNd4AeM',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}"> -->
         <!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
         <!--         <div class="overlay">
