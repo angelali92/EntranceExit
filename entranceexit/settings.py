@@ -79,6 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'entranceexit_db',
+        'USER': 'angela',
+        'PASSWORD': 'XiaoMing5433154331',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
