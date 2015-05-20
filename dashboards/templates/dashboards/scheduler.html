@@ -1,83 +1,61 @@
 {% load staticfiles %}
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <!--[if IE]>
-         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-         <![endif]-->
-        <title>E-Squared - Home</title>
-        <!-- BOOTSTRAP STYLE SHEET -->
-        <link href="{% static 'homepage/css/bootstrap.css' %}" rel="stylesheet" />
-        <!-- FONT AWESOME ICONS STYLE SHEET -->
-        <link href="{% static 'homepage/css/font-awesome.css' %}" rel="stylesheet" />
-        <!-- CUSTOM STYLES -->
-        <link href="{% static 'homepage/css/style.css' %}" rel="stylesheet" />
-        <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-         <![endif]-->
-        
-        
-    </head>
-    <body>
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header scroll-me">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#home">
-                        <img src="{% static 'homepage/img/logo.png' %}" alt="" class="img-responsive" style="height:100%;" />
-                    </a>
-                </div>
-                <div class="navbar-collapse collapse navbar-right scroll-me">
-                    <ul class="nav navbar-nav ">
-                        <li><a href="#home">HOME</a></li>
-                        <!-- <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#pricing">PRICING</a></li>
-                        <li><a href="#team">TEAM</a></li>
-                        <li><a href="#login-modal" data-toggle="modal">LOGIN</a></li> -->
-                    </ul>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>E-Squared - Scheduler</title>
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link href="{% static 'homepage/css/bootstrap.css' %}" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS STYLE SHEET -->
+    <link href="{% static 'homepage/css/font-awesome.css' %}" rel="stylesheet" />
+    <!-- CUSTOM STYLES -->
+    <link href="{% static 'homepage/css/style.css' %}" rel="stylesheet" />
+    <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'homepage.views.index' %}">
+                    <img src="{% static 'homepage/img/logo.png' %}" alt="" class="img-responsive" style="height:100%;" /> 
+                </a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right scroll-me">
+                <ul class="nav navbar-nav ">
+                    <li><a href="{% url 'homepage.views.index' %}">HOME</a></li>
+                    <!-- <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#login-modal" data-toggle="modal">LOGIN</a></li> -->
+                </ul>
             </div>
 
         </div>
     </div>
     <!-- NAVBAR CODE END -->
-    <div id="home">
-        <!-- <div id="video-sec" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=moSFlvxnbgk',containment:'self',autoPlay:true, mute:true, startAt:10, stopAt:40, opacity:1, mute: true, loop:true, showControls:false, showAnnotations:false, showYTLogo: false}"> -->
-            <div class="overlay">
-                <!-- overylay class usage -->
-                <div class="container">
-                    <div class="col-md-8 col-md-offset-2 text-center pad-bottom">
 
-                        <h1> ENTRANCE & EXIT </h1>
-                        <h2>You Think, We Deliver </h2>
-                        <br/>
-                        <h3> Sign up as a...</h3>
-                        <a class="btn btn-default btn-lg" href="#job-signup-modal" data-toggle="modal"> Job Seeker</a>
-
-                        <a class="btn btn-default btn-lg" href="#comp-signup-modal" data-toggle="modal"> Company Rep</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!--HOME SECTION END  -->
-
-    <section id="services">
+    <section id="services" style="padding-bottom: 345px;">
         <div class="container">
             <div class="row text-center pad-bottom">
                 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-                    <h2 class="head-set">SCHEDULE A PHONE CALL WITH THE AVENGERS</h2>
+                    <h2 class="head-set">SCHEDULE A PHONE CALL</h2>
                 </div>
             </div>
             <div class="row text-center">
@@ -108,7 +86,8 @@
                         </div>
                         </div>
                         <br/>
-                        <div class="form-group"><button type="submit" class="btn btn-success pull-right">Schedule!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
+                        <div class="form-group">
+                                <input type=button onClick="location.href='/dashboards/matches'" class="btn btn-success pull-right" value='Schedule!'><p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
                         </div>
                     </form>
             </div>
@@ -116,102 +95,6 @@
     </section>
     <!--SERVICES SECTION END  -->
 
-    <!-- Modals -->
-    <div id="job-signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="signup-label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="signup-label">Warm Welcome from the E2 Team</h3>
-                </div>
-                <div class="modal-body">
-
-                </div>
-                <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="comp-signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="signup-label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="signup-label">Warm Welcome from the E2 Team</h3>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal col-sm-12">
-                        <div class="form-group"><label>Company Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text">
-                        </div>
-                        <div class="form-group"><label>Password</label><input class="form-control password" placeholder="At least 6 char and/or numbers" data-placement="top" data-trigger="manual" data-content="Must be in valid format ******" type="text">
-                        </div>
-                        <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text">
-                        </div>
-                        <div class="form-group"><label>Phone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text">
-                        </div>
-                        <div class="form-group"><label>Company Bio</label><textarea class="form-control bio" placeholder="About the company" data-placement="top" data-trigger="manual"></textarea>
-                        </div>
-                        <div class="form-group"><label>Job Field</label><input class="form-control jobfield" placeholder="Job Field of Company" data-placement="top" data-trigger="manual"></textarea>
-                        </div>
-                        <div class="form-group"><label>Official Website</label><input class="form-control web" placeholder="URL" data-placement="top" data-trigger="manual" type="text">
-                        </div>
-                        <div class="form-group"><label>State of Residency</label>
-                            <BR>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    State <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">AL</a></li>
-                                    <li><a href="#">AK</a></li>
-                                    <li><a href="#">AZ</a></li>
-                                    <li><a href="#">AR</a></li>
-                                    <li><a href="#">CA</a></li>
-                                    <li><a href="#">CO</a></li>
-                                    <li><a href="#">CT</a></li>
-                                    <li><a href="#">DE</a></li>
-                                    <li><a href="#">FL</a></li>
-                                </ul>
-                        </div>
-                        </div>
-                        <div class="form-group"><button type="submit" class="btn btn-success pull-right">Sign Up!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--SIGNUP SECTION END -->
-    <div id="login-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="login-label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="login-label">Happy to See You Again</h3>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal col-sm-12">
-                        <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text">
-                        </div>
-                        <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text">
-                        </div>
-                        <div class="form-group"><label>Password</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea>
-                        </div>
-                        <div class="form-group"><button type="submit" class="btn btn-success pull-right">Log In!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--LOGIN SECTION END -->
 
     <footer>
         © 2015
