@@ -19,5 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^$', 'homepage.views.index'),
 	url(r'^surveys/', include('surveys.urls')),
+    url(r'^dashboards/', include('dashboards.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]

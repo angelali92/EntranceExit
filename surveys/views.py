@@ -19,3 +19,9 @@ def results(request, question_id):
 
 def vote(request, question_id):
     return HttpResponse("You're voting on question %s." % question_id)
+
+def candidate(request):
+	return render(request, 'surveys/candidate.html')
+
+def company(request):
+	return render(request, 'surveys/company.html')
