@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
 	url(r'^surveys/', include('surveys.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', 'entranceexit.views.index'),
 ]
